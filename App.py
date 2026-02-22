@@ -124,7 +124,12 @@ App.layout = html.Div([
         ], className='col-md-12')
     ],className='row')
 
-], className= 'container')
+], className= 'container',
+    style={
+            "backgroundColor": "black",
+            "minHeight": "100vh",
+            "padding": "20px"
+})
 
 
 # Bar chart callback
@@ -177,3 +182,4 @@ def generate_pie(my_dropdown):
 
 if __name__ == '__main__':
     App.run(debug=True)
+
